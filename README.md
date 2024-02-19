@@ -34,8 +34,8 @@ The changes made to the source and sink functionality and header files were the 
 
 ## **Observations**
  
-![noc.x 1](noc1.png)
-![noc.x 2](noc2.png)
+![noc.x 1](Images/noc1.png)
+![noc.x 2](Images/noc2.png)
 Figure 1. Executing noc.x between source 4 and sink 7, then graphing the trace files using Gtkwave
 
 ![gtkwave](noc3.png)
