@@ -9,7 +9,11 @@ The increasing demand for high-performance computing systems has led to the deve
 
 In this project, we aim to develop a practical NoC simulation model using SystemC, a C++ library for system-level modeling. The project focuses on a mesh based NoC topology that consists of switches and Ips, where each switch is connected to four adjacent switches and four IP’s. The goal is to develop a modular and scalable NoC simulator that can be extended for from the 2x1 topology to a 4x4 topology. 
 
-The project includes the development of different modules that represent components and functionality of an NoC design. These modules include the source, sink, and router modules, each with their respective input and output ports. The router modules consist of lower-level modules, including the arbiter, FIFO, and crossbar modules, which are responsible for routing and switching techniques in the NoC. Finally, the main function connects all the NoC modules and generates clock and tracing capabilities. 
+![RouterA](Images/Router%20Architecture.jpg)
+
+Figure 1. Router Module Architecture
+
+The project includes the development of different modules that represent components and functionality of an NoC design. These modules include the source, sink, and router modules, each with their respective input and output ports. The router modules consist of lower-level modules, including the arbiter, FIFO, and crossbar modules, which are responsible for routing and switching techniques in the NoC as seen in Fig.1. Finally, the main function connects all the NoC modules and generates clock and tracing capabilities. 
 	
 The project’s objectives include the development of a practical NoC simulation model and the analysis of simulation results using visualization tools. This report presents an interim update on the progress of the project, including the description of the NoC simulator’s modules and their functionalities, as well as the results of initial simulations.
 
@@ -36,13 +40,13 @@ The changes made to the source and sink functionality and header files were the 
  
 ![noc.x 1](Images/noc1.png)
 ![noc.x 2](Images/noc2.png)
-Figure 1. Executing noc.x between source 4 and sink 7, then graphing the trace files using Gtkwave
+Figure 2. Executing noc.x between source 4 and sink 7, then graphing the trace files using Gtkwave
 
 ![gtkwave](Images/noc3.png)
-Figure 2. Gtkwave terminal results
+Figure 3. Gtkwave terminal results
 
 ![gtkwave src4 and snk7](Images/noc4.png)
-Figure 3. Gtkwave results for source 4 and sink 7
+Figure 4. Gtkwave results for source 4 and sink 7
 
 ## **Results**
 
