@@ -1,4 +1,4 @@
-# 4x4 Mesh Network-On-Chip
+# 4x4 Mesh-Based Network-On-Chip
 ## **Abstract**
 
 This project interim report provides an overview of a Network-on-Chip (NoC) simulation project developed using SystemC. The report describes the modules and functionality of the NoC design, including the source, sink, and router modules, as well as the arbiter, FIFO, and crossbar modules. The report also discusses the packet structure, clock, and tracing capabilities, and the simulation results obtained from executing the NoC simulation. Overall, the project aims to develop a practical NoC system model for further research and experimentation.
