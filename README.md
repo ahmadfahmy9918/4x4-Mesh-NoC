@@ -38,10 +38,10 @@ The changes made to the source and sink functionality and header files were the 
 ![noc.x 2](Images/noc2.png)
 Figure 1. Executing noc.x between source 4 and sink 7, then graphing the trace files using Gtkwave
 
-![gtkwave](noc3.png)
+![gtkwave](Images/noc3.png)
 Figure 2. Gtkwave terminal results
 
-![gtkwave src4 and snk7](noc4.png)
+![gtkwave src4 and snk7](Images/noc4.png)
 Figure 3. Gtkwave results for source 4 and sink 7
 
 ## **Results**
