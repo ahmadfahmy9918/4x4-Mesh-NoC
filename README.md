@@ -1,7 +1,7 @@
 # 4x4 Mesh-Based Network-On-Chip
 ## **Abstract**
 
-This project interim report provides an overview of a Network-on-Chip (NoC) simulation project developed using SystemC. The report describes the modules and functionality of the NoC design, including the source, sink, and router modules, as well as the arbiter, FIFO, and crossbar modules. The report also discusses the packet structure, clock, and tracing capabilities, and the simulation results obtained from executing the NoC simulation. Overall, the project aims to develop a practical NoC system model for further research and experimentation.
+This project report provides an overview of a Network-on-Chip (NoC) simulation project developed using SystemC, described below are the modules and functionality of the NoC design, including the source, sink, and router modules, as well as the arbiter, FIFO, and crossbar modules. The report also discusses the packet structure, clock, and tracing capabilities, and the simulation results obtained from executing the NoC simulation. Overall, the project aims to develop a practical NoC system model for further research and experimentation.
 
 ## **Introduction**
 
@@ -36,7 +36,7 @@ The first change was to add four more if-else statements in the each of the buff
 The changes made to the source and sink functionality and header files were the same: it was to add the d_est and ch_k input signals to store the destination field of the packets and a check signal to compare against the source_id/sink_id of the module. Lastly, the main file was changed a lot to implement the additional source and sink modules for the 4x4 mesh topology by adding 16 sink ids, 16 source ids, extending the general ids (id0, id1, etc.) to 16 as well, a scinput integer variable, a 4-bit check signal, and integers i and j for _____. Then all 16 source, sink, and router objects were instantiated and mapped to connect to each of the 16 routers in a 4x4 topology to one source and sink module each, accordingly. Then a trace file was created to capture and display the signal changes using Gtkwave, so trace signals were added for all of the additional signals that were added (sources 0-15, sinks 0-15, and routers 0-15), as well as tracking for the router clock. The user is then asked to input two numbers for the source and sink IDs to send a packet to and from which are saved in the i and j variables. These values are then written and traced. Finally, the packet routing is printed to the terminal to provide tracking information.
 
 
-## **Observations**
+## **Results**
  
 ![noc.x 1](Images/noc1.png)
 ![noc.x 2](Images/noc2.png)
@@ -48,9 +48,7 @@ Figure 3. Gtkwave terminal results
 ![gtkwave src4 and snk7](Images/noc4.png)
 Figure 4. Gtkwave results for source 4 and sink 7
 
-## **Results**
-
-The 4x4 mesh topology NoC was successfully implemented, latency was successfully measured during the interim report to be roughly 1ns and had low latency and high throughput for small data transfers within a single cluster but latency increased and throughput decreased for larger transfer between different clusters which indicated the impact of congestion and contention. 
+The 4x4 mesh topology NoC was successfully implemented as shown in Figs. 2-4, latency was successfully measured during the interim report to be roughly 1ns, showcasing low latency and high throughput for small data transfers within a single cluster. However, latency increased and throughput decreased for larger transfers between different clusters which indicated the impact of congestion and contention. 
 
 ## **Conclusion**
 
