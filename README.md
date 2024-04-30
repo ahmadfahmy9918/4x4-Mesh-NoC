@@ -53,3 +53,6 @@ The 4x4 mesh topology NoC was successfully implemented as shown in Figs. 2-4, la
 ## **Conclusion**
 
 In conclusion, the 4x4 NoC project has demonstrated the feasibility and advantages of using a NoC for on-chip communication. The NoC showed low latency and high throughput for small data transfers within a single cluster, which is particularly important for applications such as multimedia and gaming. However, for larger data transfers between different clusters, the NoC experienced congestion and contention, which could be addressed by adding more routing and flow control mechanisms. Overall, the project has provided valuable insights into the design and implementation of NoCs and has opened new avenues for future research in this area.
+
+## **References**
+[1] [NoC Project Reference Manual](https://www.ee.torontomu.ca/~courses/coe838/labs/NoC-Project.pdf)
